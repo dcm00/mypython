@@ -36,3 +36,6 @@ jobs:
       # Build the app and run tests
       - name: Run Test
         run: python -m unittest tests/sum_test.py
+        
+      - name: Run New Test
+        run: python -m unittest tests/min_test.py
