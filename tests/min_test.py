@@ -1,6 +1,6 @@
 import unittest
 
-from app.routes import min
+from app.routes import minimo
 
 class TestMin(unittest.TestCase):
     def test_with_min(self):
