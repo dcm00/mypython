@@ -24,3 +24,16 @@ def sum(arg):
     return total
 
 
+@app.route('/minim')
+def minim():
+    data = request.args.get('data', None)
+    _list = list(map(int, data.split(',')))
+    
+    total = min(_list)
+    return 'Result= ' + str(total)
+
+def min(arg):
+    total = min(arg)
+    return total
+
+
