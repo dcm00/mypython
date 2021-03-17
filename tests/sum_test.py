@@ -21,16 +21,16 @@ class TestSum(unittest.TestCase):
     def test_with_tupple(self):
         data = (1, 2, 3, 4, 5)
         result = sum(data)
-        self.assertEqual(result, 14)
+        self.assertEqual(result, 15)
 
     def test_fail_with_string(self):
         data = [1, 2, '3', '4', '5']
         result = sum(data)
-        self.assertEqual(result[0], "Internal Server Error") 
+        self.assertEqual(result[0], "Error ocurred!") 
         self.assertEqual(result[1], 500) 
 
     def test_fail_with_single_value(self):
         data = 1
         result = sum(data)
-        self.assertEqual(result[0], "Internal Server Error") 
+        self.assertEqual(result[0], "Error ocurred!") 
         self.assertEqual(result[1], 500) 
