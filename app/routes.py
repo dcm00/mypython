@@ -32,7 +32,7 @@ def minim():
     total = min(_list)
     return 'Result= ' + str(total)
 
-def min(arg):
+def minimo(arg):
     total = min(arg)
     return total
 
